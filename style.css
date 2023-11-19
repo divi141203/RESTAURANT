@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.div1{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/img1.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 0 1%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.div3{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.div3 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    font-size:20px;
+}
+a:hover,a:active{
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+.div3 .btn{
+    background-color: white;
+    color: black;
+    padding: 8px 30px;
+    border-radius: 4px;
+}
+.div4{
+    margin-top: 130px;
+    text-align: center;
+    color: white;
+}
+.div4 h2,h3{
+    font-size: 20px;
+    font-style: italic;
+
+}
+.div4 pre{
+    font-size: 80px;
+    font-family: 'Brush Script MT', cursive ;
+}
+.about h2{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.about pre{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Garamond, serif;
+}
+.menu h1{
+    text-align: center;
+    color: white;
+    font-size: 65px;
+}
+.menu table{
+    padding-left: 500px;
+    padding-top: 5px;
+}
+#t1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 120px;
+}
+.menu td{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Garamond, serif;
+}
+#d1 h2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: Garamond, serif;
+}
+.image{
+    width: 80%;
+    margin: 30px auto 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px;
+}
+.image img{
+    width: 100%;
+    cursor: pointer;
+}
+.image img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    border:2px solid white;
+    box-shadow : 0 32px 7px rgba(66,77,136,0.2);
+}
+.form1{
+    align-items: center;
+    max-width: 500px;
+    padding-top: 100px;
+    margin : auto;
+    margin-top: 1px;
+    width: 50%;
+    color: white;
+    font-size: xx-large;
+}
+.div5 input,label{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.s1{
+    border: 2px solid white;
+    color: white;
+    padding:10px;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 500px;
+}
+.form2{
+    align-items: center;
+    max-width: 500px;
+    padding-top: 20px;
+    margin : auto;
+    margin-top: 1px;
+    width: 50%;
+    color: white;
+    font-size: xx-large;
+}
+.div6 input,label{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.s2{
+    border: 2px solid white;
+    color: white;
+    padding:10px;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 500px;
+}
+@media (max-width:700px)
+{
+    .div2{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .div3{
+        justify-content: center;
+    }
+    .m1 a{
+        margin-left: 8px;
+        margin-right: 1px;
+    }
+    .m2 a{
+        display: block;
+    }
+    .div3 .btn{
+        background: transparent;
+        color: white;
+        padding: 0;
+    }
+    .div4 h2,h3{
+        font-size: 16px;
+    }
+    .div4 pre{
+        font-size: 42px;
+    }
+    .menu h1{
+        font-size: 40px;
+    }
+    .menu table{
+        padding-top: 1px;
+        padding-left: 0px;
+    }
+    #t1{
+        font-size: 35px;
+        padding-left: 80px;
+        padding-top: 10px;
+    }
+    .menu td{
+        font-size: 30px;
+    }
+    .about h2{
+        font-size: xx-large;
+    }
+    .about pre{
+        font-size:25px;
+        text-wrap: wrap;
+    }
+    #d1 h2{
+        font-size: 25px;
+    }
+    .image{
+        padding-bottom: 20px;
+    }
+    .form1{
+        font-size: 30px;
+    }
+    .s1{
+        margin-left: 140px;
+    }
+    .form2{
+        font-size: 20px;
+    }
+    .s2{
+        margin-left: 100px;
+    }
+}
